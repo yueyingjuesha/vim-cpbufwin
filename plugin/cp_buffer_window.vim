@@ -1,3 +1,9 @@
+" Loading guard
+if exists("g:loaded_cp_buffer_window")
+    finish
+endif
+let g:loaded_cp_buffer_window = 1
+
 " Add window number to lightline
 function! WindowNumber(...)
     let builder = a:1
